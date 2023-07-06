@@ -13,11 +13,12 @@ jobs:
 
     - name: Checkout Repo
       uses: actions/checkout@v1
+      
+    - name: Check dir's
+      run: ls -l; pwd
 
     - name: Terraform Init
       uses: hashicorp/terraform-github-actions/init@v0.4.0
-      steps:
-        - run: ls -l
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         TF_ACTION_WORKING_DIR: 'terraform'
