@@ -8,6 +8,10 @@ terraform {
   }
 }
 
+provider "aws" {
+  region = "us-east-1"
+}
+
 variable "imtiaj_app" {
   description = "App for test"
   type        = string
