@@ -15,7 +15,7 @@ jobs:
       uses: actions/checkout@v1
       
     - name: Check dir's
-      run: ls -l; pwd; mkdir -p /home/runner/work/AWSappservices/AWSappservices/terraform; cp main.tf terraform/
+      run: ls -l; pwd; mkdir -p /home/runner/work/AWSappservices/AWSappservices/terraform; cp main.tf terraform/; terraform version
 
     - name: Terraform Init
       uses: hashicorp/terraform-github-actions/init@v0.4.0
