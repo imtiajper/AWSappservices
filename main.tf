@@ -67,6 +67,8 @@ resource "aws_instance" "imtiaj_web"
     iam_instance_profile = "data.aws_iam_role.app_role"
 }
 
+# TEST
+
 
 
 
