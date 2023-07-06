@@ -59,7 +59,7 @@ resource "aws_security_group" "app_security_group" {
 }
 }
 
-resource "aws_instance" "imtiaj_web"
+resource "aws_instance" "imtiaj_web" {
     ami                  = "var.imtiaj_image"
     intance_type         = "t2.micro"
     key_name             = "imtiaj_test_key"
